@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar"
+    android:background="@color/fbutton_color_silver">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="MODIFICACIÒN - REGISTROS"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <!-- Sistema de registro -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:hint="Nombre de local"
+                android:text="980322"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/black"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="9"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true" />
+
+            <!-- Configuracion hora Inicial -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtHoraInicio"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:hint="Hora Inicio"
+                    android:text="00"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/black"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="2"
+                    app:met_primaryColor="@android:color/black"
+                    app:met_singleLineEllipsis="true" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtMinutoInicio"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:hint="Minuto Inicio"
+                    android:text="00"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/black"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="2"
+                    app:met_primaryColor="@android:color/black"
+                    app:met_singleLineEllipsis="true" />
+
+            </LinearLayout>
+            <!-- Configuracion hora Final -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtHoraFinal"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:hint="Hora Fin"
+                    android:text="00"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/black"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="2"
+                    app:met_primaryColor="@android:color/black"
+                    app:met_singleLineEllipsis="true" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtMinutoFinal"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:hint="Minuto Fin"
+                    android:text="00"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/black"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="2"
+                    app:met_primaryColor="@android:color/black"
+                    app:met_singleLineEllipsis="true" />
+
+            </LinearLayout>
+
+            <!-- Configuracion Consumo -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONFIGURACION CONSUMO" />
+
+                <SeekBar
+                    android:id="@+id/barraConsumo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_light"
+                        android:text="0" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_light"
+                        android:text="10" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_light"
+                        android:text="20" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="30" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="40" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="50" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="60" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="70" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/registrarColor"
+                        android:text="80" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/registrarColor"
+                        android:text="90" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/registrarColor"
+                        android:text="100" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONFIGURACION POTENCIA (0-100%)" />
+
+                <SeekBar
+                    android:id="@+id/barraPotencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_light"
+                        android:text="0%" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_light"
+                        android:text="10%" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_light"
+                        android:text="20%" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="30%" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="40%" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="50%" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="60%" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/amarillo"
+                        android:text="70%" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/registrarColor"
+                        android:text="80%" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/registrarColor"
+                        android:text="90%" />
+
+                    <TextView
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/registrarColor"
+                        android:text="100%" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Escriba el codigo del local que desea borrar"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/black"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="2"
+                    app:met_primaryColor="@android:color/black"
+                    app:met_textColorHint="@android:color/black" />
+            </LinearLayout>
+
+            <!-- SELECCION DE OPCIONES (AÑADIR,BORRAR) -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnAñadirLocal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Registrar"
+                    android:textColor="@android:color/black"
+                    app:cornerRadius="4dp"
+                    app:fButtonColor="@color/registrosColor"
+                    app:shadowColor="@android:color/black"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="5dp" />
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnBorrarLocal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Borrar"
+                    android:textColor="@android:color/black"
+                    app:cornerRadius="4dp"
+                    app:fButtonColor="@color/registrarColor"
+                    app:shadowColor="@android:color/black"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
